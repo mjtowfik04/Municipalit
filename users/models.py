@@ -43,7 +43,9 @@ class User(AbstractUser):
 
     nid = models.CharField(
         max_length=20,
-        unique=True
+        unique=True,
+        null= True,
+        blank=True
     )
 
     date_of_birth = models.DateField(
